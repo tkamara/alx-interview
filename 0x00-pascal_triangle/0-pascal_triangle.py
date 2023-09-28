@@ -3,6 +3,7 @@
 Pascal's triangle function
 """
 
+
 def factorial(num):
     """obtaining factorial
     """
@@ -11,10 +12,12 @@ def factorial(num):
     else:
         return (num * factorial(num - 1))
 
+
 def combination(n, k):
     """obtaining the combination formula
     """
-    return (factorial(n) // (factorial (k) * factorial(n - k)))
+    return (factorial(n) // (factorial(k) * factorial(n - k)))
+
 
 def pascal_triangle(n):
     """
