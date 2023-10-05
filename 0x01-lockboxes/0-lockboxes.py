@@ -11,10 +11,10 @@ def canUnlockAll(boxes):
     if type(boxes) is not list or not boxes:
         return False
 
-    checked  = [0]
+    checked = [0]
     for i in checked:
         for key in boxes[i]:
-            if key not in checked  and key < len(boxes):
+            if key not in checked and key < len(boxes):
                 checked.append(key)
 
     return len(checked) == len(boxes)
