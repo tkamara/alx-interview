@@ -8,17 +8,17 @@ def validUTF8(data):
     encoding
     """
     i = 0
-    #dealing with single bit characters (0b00000000 to 0b10111111)
+    # dealing with single bit characters (0b00000000 to 0b10111111)
     while i < len(data):
         if data[i] < 128:
             i += 1
         else:
             if data[i] < 192 or data[i] > 247:
                 return False
-            #dealing with multibyte characters
-            temp  = 0
+            # dealing with multibyte characters
+            temp = 0
             # 0b11000000 to 0b11011111
-            if 192 <= data[i] <= 223: 
+            if 192 <= data[i] <= 223:
                 temp = 2
             # 0b11100000 to 0b11101111
             elif 224 <= data[i] <= 239:
