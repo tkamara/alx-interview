@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """rotating 2D matrix in-place"""
-import copy
+
 
 def rotate_2d_matrix(matrix):
     """rotating n x n matrix 90 degrees clockwise"""
