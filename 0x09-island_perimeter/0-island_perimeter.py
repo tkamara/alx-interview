@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """island perimeter"""
+
+
 def island_perimeter(grid):
     """return perimeter of grid"""
     if not grid or not grid[0]:
